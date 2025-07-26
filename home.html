@@ -18,21 +18,9 @@
             }
         });
 
-        document.addEventListener("touchend", function(event) {
-            event.preventDefault(); // Evita gesture o scroll
-
-            if (event.changedTouches.length === 0) return;
-
-            const touch = event.changedTouches[0];
-            const x = touch.clientX;
-            const y = touch.clientY;
-
-            console.log("Tocco rilevato in:", x, y); // Debug
-
-            if (x >= 349 && x <= 863 && y >= 359 && y <= 397) {
-                window.location.href = "password.html";
-            }
-        }, { passive: false }); 
+        document.getElementById("full-page-overlay").addEventListener("pointerup", function() {
+            window.location.href = "password.html";
+        });
 
     </script>
   </body>
