@@ -1,0 +1,17 @@
+body {
+  background-image: url("Immagini/home.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh; /* Per coprire l'intera altezza della finestra */
+}
+
+#info {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+}
