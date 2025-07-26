@@ -9,26 +9,13 @@
     
     <script>
 
-        let touchHandled = false;
+        document.addEventListener("pointerup", function(event) {
+            const x = event.clientX;
+            const y = event.clientY;
 
-        function handleInput(x, y) {
             if (x >= 349 && x <= 863 && y >= 359 && y <= 397) {
                 window.location.href = "password.html";
             }
-        }
-
-        document.addEventListener("touchend", function(event) {
-            touchHandled = true;
-            const touch = event.changedTouches[0];
-            handleInput(touch.clientX, touch.clientY);
-        });
-
-        document.addEventListener("click", function(event) {
-            if (touchHandled) {
-                touchHandled = false; // Reset per i prossimi eventi
-                return; // Ignora il click successivo al touch
-            }
-            handleInput(event.clientX, event.clientY);
         });
 
     </script>
