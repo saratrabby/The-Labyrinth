@@ -10,12 +10,22 @@
     <script>
 
         document.addEventListener('click', function(event) {
-        const x = event.clientX; // Coordinate X del clic
-        const y = event.clientY; // Coordinate Y del clic
+            const x = event.clientX; // Coordinate X del clic
+            const y = event.clientY; // Coordinate Y del clic
 
-        if (x >= 349 && x <= 863 && y >= 359 && y <= 397) {
-            window.location.href = "password.html"; // Reindirizza alla pagina password.html
-        }
+            if (x >= 349 && x <= 863 && y >= 359 && y <= 397) {
+                window.location.href = "password.html"; // Reindirizza alla pagina password.html
+            }
+
+        });
+
+        document.addEventListener("touchend", function(event) {
+            const x = event.clientX; // Coordinate X del clic
+            const y = event.clientY; // Coordinate Y del clic
+
+            if (x >= 349 && x <= 863 && y >= 359 && y <= 397) {
+                window.location.href = "password.html"; // Reindirizza alla pagina password.html
+            }
 
         });
 
