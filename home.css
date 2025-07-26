@@ -6,3 +6,12 @@ body {
   height: 100vh; /* Per coprire l'intera altezza della finestra */
 }
 
+#area-cliccabile {
+    position: absolute;
+    left: 349px;
+    top: 359px;
+    width: 514px;
+    height: 38px;
+    border: 2px dashed red;
+    z-index: 9999;
+}
