@@ -5,18 +5,18 @@
   </head>
   <body data-server-no-reload>
     <link rel="stylesheet" href="home.css">
-    <a href="password.html">Password</a>
     
     <script>
 
         document.addEventListener('click', function(event) {
         const x = event.clientX; // Coordinate X del clic
         const y = event.clientY; // Coordinate Y del clic
-        });
 
         if (x >= 349 && x <= 863 && y >= 359 && y <= 397) {
             window.location.href = "password.html"; // Reindirizza alla pagina password.html
         }
+        
+        });
 
     </script>
   </body>
