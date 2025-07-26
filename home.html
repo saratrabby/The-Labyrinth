@@ -9,24 +9,26 @@
     
     <script>
 
-        document.addEventListener('click', function(event) {
-            const x = event.clientX; // Coordinate X del clic
-            const y = event.clientY; // Coordinate Y del clic
+        let touchHandled = false;
 
+        function handleInput(x, y) {
             if (x >= 349 && x <= 863 && y >= 359 && y <= 397) {
-                window.location.href = "password.html"; // Reindirizza alla pagina password.html
+                window.location.href = "password.html";
             }
-
-        });
+        }
 
         document.addEventListener("touchend", function(event) {
-            const x = event.clientX; // Coordinate X del clic
-            const y = event.clientY; // Coordinate Y del clic
+            touchHandled = true;
+            const touch = event.changedTouches[0];
+            handleInput(touch.clientX, touch.clientY);
+        });
 
-            if (x >= 349 && x <= 863 && y >= 359 && y <= 397) {
-                window.location.href = "password.html"; // Reindirizza alla pagina password.html
+        document.addEventListener("click", function(event) {
+            if (touchHandled) {
+                touchHandled = false; // Reset per i prossimi eventi
+                return; // Ignora il click successivo al touch
             }
-
+            handleInput(event.clientX, event.clientY);
         });
 
     </script>
