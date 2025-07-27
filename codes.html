@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>Home</title>
+  </head>
+  <body data-server-no-reload>
+    <link rel="stylesheet" href="codes.css">
+    <div class="notebook">
+        <div class="cover">
+            <h1 class="titolo-copertina">COSMIC</br>JOURNAL</h1>
+        </div>
+        <div class="pages">
+            <h1 class="richiesta">This journal will be capable of giving you answers! </br> Enter a code: </h1>
+            <form id="codeForm" action="">
+                <input type="text" id ="code" name="code" placeholder="Code"  required>
+                <button type="submit">Enter</button>
+            </form>
+        </div>
+        <div class="segnalibro"></div>
+    </div>
+    
+    <script>
+
+        function blocco_mousedx()
+        { return(false); }
+        document.oncontextmenu = blocco_mousedx;
+
+        document.onkeydown = function(blocco_tasti) {
+        if(event.keyCode == 123) 
+        { return false; }
+        if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'I'.charCodeAt(0)) { return false; }
+        if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'C'.charCodeAt(0)) { return false; }
+        if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'J'.charCodeAt(0)) { return false; }
+        if(blocco_tasti.ctrlKey && blocco_tasti.keyCode == 'U'.charCodeAt(0)) 
+        { return false; } 
+        }
+
+        var codice = "";
+        document.getElementById("codeForm").addEventListener("click", function() {
+            codice = document.getElementById("code").value;
+            codice = codice.trim(); // Remove any leading/trailing whitespace
+            codice = codice.toUpperCase(); // Convert to uppercase
+
+            if (codice === "MELANY") {
+                alert("You have entered the code for Melany!");
+            } else if (codice === "TRITONIA") {
+            } else if (codice === "AQUA") {
+            } else if (codice === "STEPHANY") {
+            } else if (codice === "JOHNNY") {
+            } else if (codice === "SNAKOID") {
+            } else if (codice === "AXOLOTL") {
+            } else if (codice === "AMANDA") {
+            } else if (codice === "CARA") {
+            } else if (codice === "PLANET") {
+            }
+        });
+
+    </script>
+  </body>
+</html>

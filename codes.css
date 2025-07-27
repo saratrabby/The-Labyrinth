@@ -1,0 +1,181 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #420a7a;
+  background: linear-gradient(177deg,rgb(30, 6, 152) 0%, rgba(192, 61, 209, 1) 100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.notebook {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.cover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 5px;
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  animation: pulseFrame 3s infinite ease-in-out;
+}
+
+@keyframes pulseFrame {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+}
+
+.cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1a082f, #48224d);
+  border-radius: 5px;
+  transform-origin: left;
+  transform: rotateY(0deg);
+  transition: transform 1s ease-in-out;
+  box-shadow: 0 8px 30px rgba(57, 8, 87, 0.8), 0 0 60px rgba(214, 133, 222, 0.6);
+  backdrop-filter: blur(6px);
+  z-index: 10;
+  border: 1px solid rgba(27, 5, 34, 0.2);
+}
+
+button {
+    background-color: #550761;
+    color: white;
+    padding: 9px 13px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Orbitron', sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow:
+        0 0 5px #a991c4,
+        0 0 10px #d00de6,
+        2px 2px 3px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+  }
+  button:hover {
+    background-color: #550761;
+  }
+
+.titolo-copertina {
+  color: #f8f0ff;
+  font-size: 40px;
+  font-family: 'Orbitron', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+  text-shadow:
+    0 0 5px #a991c4,
+    0 0 10px #d00de6,
+    2px 2px 3px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  background: linear-gradient(to right, #e7d4ff, #ffffff, #e7d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.richiesta {
+  color: #2c074d;
+  font-size: 17px;
+  font-family: 'Orbitron', sans-serif;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow:
+    0 0 5px #a991c4,
+    0 0 10px #d00de6,
+    2px 2px 3px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+
+input[type="text"] {
+  color: #2c074d;
+  font-size: 17px;
+  font-family: 'Orbitron', sans-serif;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow:
+    0 0 5px #a991c4,
+    0 0 10px #d00de6,
+    2px 2px 3px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+
+.pages::before {
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: 10px;
+  bottom: 10px;
+  width: 4px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #ccc,
+    #ccc 2px,
+    #fff 2px,
+    #fff 4px
+  );
+  border-radius: 2px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+.pages {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.segnalibro {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  width: 20px;
+  height: 40px;
+  background: linear-gradient(135deg, #e600ff, #fdc6fb);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  box-shadow: 0 0 10px rgba(255, 0, 234, 0.6);
+  animation: floatTag 2s infinite ease-in-out;
+  z-index: 15;
+}
+
+@keyframes floatTag {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+
+.notebook:hover .cover {
+  transform: rotateY(-160deg);
+}

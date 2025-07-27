@@ -34,6 +34,7 @@ html, body {
   color: rgb(223, 148, 226);
   text-align: center;
   height: 80dvh;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
