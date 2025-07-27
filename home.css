@@ -68,6 +68,19 @@ html, body {
 }
 
 @media screen and (orientation: landscape) and (max-height: 500px) {
+  .contenitore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    width: 100%;
+    height: auto; /* meglio auto in landscape basso */
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
   .titolo {
     font-size: 50px;
   }
