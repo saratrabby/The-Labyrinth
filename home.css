@@ -67,6 +67,8 @@ html, body {
     .contenitore {
       height: auto; /* Permette alla contenitore di adattarsi al contenuto */
       padding: 1rem; /* Aggiunge un padding per evitare che il testo tocchi i bordi */
+      justify-content: center; /* Centra orizzontalmente */
+      align-items: center;    /* Centra verticalmente */
     }
 }
 
