@@ -291,6 +291,25 @@ a {
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
+    .notebook {
+        width: 80vw;
+        height: 70vh;
+    }
+
+    .cover {
+        box-shadow: 0 6px 20px rgba(57, 8, 87, 0.7), 0 0 30px rgba(214, 133, 222, 0.5);
+    }
+
+    .titolo-copertina {
+        font-size: 28px;
+    }
+
+    .richiesta,
+    input[type="text"],
+    button {
+        font-size: 14px;
+    }
+
   .popup-content {
     width: 95vw;
     max-height: 90vh;
