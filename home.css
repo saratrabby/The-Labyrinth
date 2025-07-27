@@ -13,9 +13,10 @@ html, body {
   display: flex;
   justify-content: center; /* Centra orizzontalmente */
   align-items: center;    /* Centra verticalmente */
-  height: 70dvh;          /* Altezza del viewport */
+  height: 100dvh;          /* Altezza del viewport */
   width: 100%;           /* Larghezza del viewport */
   flex-direction: column; /* Dispone gli elementi in colonna */
+  overflow: visible;
 }
 
 .titolo {
@@ -59,7 +60,7 @@ html, body {
     }
 
     .sottotitolo {
-      font-size: 35px;
+      font-size: 30px;
       height: auto;
       margin-bottom: 2rem;
     }
