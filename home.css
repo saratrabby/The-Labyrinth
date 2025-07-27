@@ -69,6 +69,9 @@ html, body {
       padding: 1rem; /* Aggiunge un padding per evitare che il testo tocchi i bordi */
       justify-content: center; /* Centra orizzontalmente */
       align-items: center;    /* Centra verticalmente */
+      height: 100dvh;          /* Altezza del viewport */
+      width: 100%;           /* Larghezza del viewport */
+      flex-direction: column; /* Dispone gli elementi in colonna */
     }
 }
 
