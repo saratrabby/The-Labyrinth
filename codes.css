@@ -313,10 +313,6 @@ a {
     font-size: 14px;
   }
 
-  .popup-image {
-    display: none; /* Nasconde l’immagine */
-  }
-
   .close {
     position: absolute;
     top: 8px;
