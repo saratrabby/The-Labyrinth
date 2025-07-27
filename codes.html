@@ -19,6 +19,26 @@
             </form>
         </div>
         <div class="segnalibro"></div>
+        <div id="popup1" class="popup">
+            <div class="popup-content">
+                <span id="closePopup" class="close">&times;</span>
+                <h2 class="popup-title">1. Manga</h2>
+                <div class="popup-body">
+                    <img src="Immagini/Manga.png" alt="Manga" class="popup-image">
+                    <div class="popup-text">
+                        <p>Melany Ondo, Stephany's mom, </br>
+                        collabored with <a href="">a mangaka</a> to make</br>
+                        a manga called "Detective Mondo".</p>
+                        <p>The whole manga was about Melany 
+                        solving cases with an android called
+                        Sky and a little kid called Stefania.</p>
+                        <p>In 2023, the manga was <a href="">discontinued</a>
+                        due to creative differences. It still
+                        published 8 books so, it's not that bad, I guess.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <script>
@@ -39,12 +59,18 @@
 
         var codice = "";
         document.getElementById("codeForm").addEventListener("click", function() {
+            event.preventDefault();
+            var popup1 = document.getElementById("popup1");
             codice = document.getElementById("code").value;
             codice = codice.trim(); // Remove any leading/trailing whitespace
             codice = codice.toUpperCase(); // Convert to uppercase
 
             if (codice === "MELANY") {
-                alert("You have entered the code for Melany!");
+                popup1.style.display = 'flex'; // Show popup
+                document.getElementById("closePopup").addEventListener("click", function() {
+                    document.getElementById("popup1").style.display = 'none';
+                    document.getElementById('codeForm').reset()
+                });
             } else if (codice === "TRITONIA") {
             } else if (codice === "AQUA") {
             } else if (codice === "STEPHANY") {
