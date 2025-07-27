@@ -50,13 +50,17 @@ html, body {
 
     .titolo {
       font-size: 20px;
-      width: auto;
+      height: auto;
       margin-top: 2rem;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      text-align: center;
+      padding: 0 1rem; /* Aggiunge un padding per evitare che il testo tocchi i bordi */
     }
 
     .sottotitolo {
       font-size: 15px;
-      width: auto;
+      height: auto;
       margin-bottom: 2rem;
     }
   }
