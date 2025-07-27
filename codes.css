@@ -292,36 +292,30 @@ a {
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
   .popup-content {
-    width: 80%;
-    padding: 16px;
-    font-size: 16px;
+    width: 90%;
+    padding: 12px;
+    font-size: 14px;
     border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
   }
 
   .popup-body {
-    flex-direction: row;
-    gap: 12px;
+    flex-direction: column; /* Layout verticale per evitare tagli */
+    align-items: center;
+    gap: 10px;
     width: 100%;
-  }
-
-  .popup-image {
-    width: 100px;
-    height: auto;
   }
 
   .popup-text {
-    font-size: 16px;
     width: 100%;
+    font-size: 14px;
+    text-align: justify;
   }
 
   .close {
-    top: 8px;
-    right: 8px;
-    width: 26px;
-    height: 26px;
-    font-size: 16px;
+    top: 6px;
+    right: 6px;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
   }
 }
