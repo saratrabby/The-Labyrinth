@@ -255,3 +255,37 @@ a {
 .close:hover {
   background-color: #8b0bed;
 }
+
+@media screen and (max-width: 600px) {
+  .popup-content {
+    width: 90%;           /* Si adatta allo schermo */
+    padding: 20px;        /* Riduci padding */
+    font-size: 16px;      /* Testo un po' più piccolo */
+    text-align: left;
+    border-radius: 8px;
+  }
+
+  .popup-body {
+    flex-direction: column;  /* Imposta layout verticale */
+    align-items: center;
+    width: 100%;
+  }
+
+  .popup-image {
+    width: 100px;
+    margin-bottom: 15px;
+  }
+
+  .popup-text {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .close {
+    top: 5px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+  }
+}
