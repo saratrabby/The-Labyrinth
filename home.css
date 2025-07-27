@@ -44,7 +44,6 @@ html, body {
 
 /* Cambia lo sfondo su schermi piccoli (mobile) */
 @media screen and (max-width: 600px) {
-  body {
     body {
       background: linear-gradient(177deg, rgba(66, 10, 122, 1) 0%, rgba(192, 61, 209, 1) 100%);
     }
@@ -64,23 +63,15 @@ html, body {
       height: auto;
       margin-bottom: 2rem;
     }
-  }
+
+    .contenitore {
+      height: auto; /* Permette alla contenitore di adattarsi al contenuto */
+      padding: 1rem; /* Aggiunge un padding per evitare che il testo tocchi i bordi */
+    }
 }
 
 @media screen and (orientation: landscape) and (max-height: 500px) {
-  .contenitore {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    gap: 1rem;
-    width: 100%;
-    height: auto; /* meglio auto in landscape basso */
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  
+
   .titolo {
     font-size: 50px;
   }
