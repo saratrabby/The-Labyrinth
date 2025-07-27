@@ -49,14 +49,14 @@ html, body {
     }
 
     .titolo {
-      font-size: 25px;
-      height: auto;
+      font-size: 20px;
+      width: auto;
       margin-top: 2rem;
     }
 
     .sottotitolo {
-      font-size: 25px;
-      height: auto;
+      font-size: 15px;
+      width: auto;
       margin-bottom: 2rem;
     }
   }
@@ -64,7 +64,7 @@ html, body {
 
 @media screen and (orientation: landscape) and (max-height: 500px) {
   .titolo {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .sottotitolo {
