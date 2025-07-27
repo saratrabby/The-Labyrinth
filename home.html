@@ -7,22 +7,30 @@
   </head>
   <body data-server-no-reload>
     <link rel="stylesheet" href="home.css">
-    <div id="full-page-overlay"></div>
+    <div class = "contenitore">
+        <p class="titolo">The Labyrinth</p>
+        <span onclick="reindirizza()" class="sottotitolo" >Click me to continue</span>
+    </div>
     
     <script>
 
-        document.addEventListener("pointerup", function(event) {
-            const x = event.clientX;
-            const y = event.clientY;
+        function blocco_mousedx()
+        { return(false); }
+        document.oncontextmenu = blocco_mousedx;
 
-            if (x >= 349 && x <= 863 && y >= 359 && y <= 397) {
-                window.location.href = "password.html";
-            }
-        });
+        document.onkeydown = function(blocco_tasti) {
+        if(event.keyCode == 123) 
+        { return false; }
+        if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'I'.charCodeAt(0)) { return false; }
+        if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'C'.charCodeAt(0)) { return false; }
+        if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'J'.charCodeAt(0)) { return false; }
+        if(blocco_tasti.ctrlKey && blocco_tasti.keyCode == 'U'.charCodeAt(0)) 
+        { return false; } 
+        }
 
-        document.getElementById("full-page-overlay").addEventListener("pointerup", function() {
+        function reindirizza() {
             window.location.href = "password.html";
-        });
+        }
 
     </script>
   </body>
