@@ -20,35 +20,32 @@ body {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
   body {
+    background-color: #000; /* sfondo nero */
     background-image: url("../Immagini/Eyes1.png");
     background-repeat: no-repeat;
     background-size: contain; /* mostra tutta l'immagine */
     background-position: center center;
-    background-attachment: scroll; /* evita problemi su mobile */
-  }
-
-  .freccia-sinistra {
-    font-size: 100px; /* più piccola */
-    margin-left: 10%;
-    margin-bottom: 10%;
-  }
-}
-
-@media screen and (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
-  body {
-    background-image: url("../Immagini/Eyes1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
     background-attachment: scroll;
+    margin: 0;
+    padding: 0;
   }
 
   .freccia-sinistra {
     font-size: 120px;
     margin-left: 15%;
     margin-bottom: 15%;
+  }
+
+  .immagine-centrale {
+    background-image: url("../Immagini/Eyes1.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto; /* larghezza piena, altezza proporzionata */
+    background-position: center center;
+    width: 100vw;
+    height: 90vh; /* quasi tutto lo schermo */
+    margin: 0 auto;
   }
 }
 
@@ -72,6 +69,16 @@ body {
     display: block;
     text-align: center;
   }
+
+  .immagine-centrale {
+    background-image: url("../Immagini/Eyes1.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto; /* larghezza piena, altezza proporzionata */
+    background-position: center center;
+    width: 100vw;
+    height: 90vh; /* quasi tutto lo schermo */
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 480px) and (orientation: portrait) {
@@ -93,5 +100,15 @@ body {
     position: relative;
     display: block;
     text-align: center;
+  }
+
+  .immagine-centrale {
+    background-image: url("../Immagini/Eyes1.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto; /* larghezza piena, altezza proporzionata */
+    background-position: center center;
+    width: 100vw;
+    height: 90vh; /* quasi tutto lo schermo */
+    margin: 0 auto;
   }
 }
