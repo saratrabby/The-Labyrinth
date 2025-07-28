@@ -1,0 +1,21 @@
+body {
+  background-image: url("../Immagini/Eyes2.png"); /* Imposta l'immagine di sfondo */
+}
+
+.freccia-sinistra {
+  text-decoration: none;
+  font-size: 150px;
+  color: #dec1e6;
+  transition: color 0.3s ease;
+  text-align: center;
+  transform: translateX(-50%);
+  display: block;
+  margin-left: 80%;
+  margin-bottom: 20%;
+  position: absolute; 
+}
+
+.freccia-sinistra:hover {
+  color: #4e3755;
+  cursor: pointer;
+}

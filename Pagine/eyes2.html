@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>The Eyes</title>
+  </head>
+  <body data-server-no-reload>
+    <link rel="stylesheet" href="eyes2.css">
+    <a href="../codes.html" class="freccia-sinistra">←</a>
+    
+    <script>
+
+        function blocco_mousedx()
+        { return(false); }
+        document.oncontextmenu = blocco_mousedx;
+
+        document.onkeydown = function(blocco_tasti) {
+        if(event.keyCode == 123) 
+        { return false; }
+        if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'I'.charCodeAt(0)) { return false; }
+        if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'C'.charCodeAt(0)) { return false; }
+        if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'J'.charCodeAt(0)) { return false; }
+        if(blocco_tasti.ctrlKey && blocco_tasti.keyCode == 'U'.charCodeAt(0)) 
+        { return false; } 
+        }
+
+    </script>
+  </body>
+</html>

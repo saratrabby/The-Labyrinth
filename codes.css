@@ -12,6 +12,28 @@ html, body {
   background-size: cover;
 }
 
+#error-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 0, 0, 0.4);
+  pointer-events: none;
+  opacity: 0;
+  z-index: 9999;
+  transition: opacity 1.5s ease-out;
+}
+
+@keyframes fadeOverlay {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .notebook {
   position: relative;
   width: 300px;
@@ -26,6 +48,7 @@ html, body {
   border-radius: 5px;
   border: 2px dashed rgba(255, 255, 255, 0.2);
   animation: pulseFrame 3s infinite ease-in-out;
+  z-index: 10;
 }
 
 @keyframes pulseFrame {
@@ -64,7 +87,7 @@ button {
     font-size: 14px;
     font-family: 'Orbitron', sans-serif;
     position: absolute;
-    top: 80%;
+    top: 73%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -103,7 +126,7 @@ button {
   font-size: 17px;
   font-family: 'Orbitron', sans-serif;
   position: absolute;
-  top: 30%;
+  top: 28%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -114,12 +137,28 @@ button {
   letter-spacing: 2px;
 }
 
+.richiesta2 {
+  color: #2c074d;
+  font-size: 10px;
+  font-family: 'Orbitron', sans-serif;
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.richiesta2:hover {
+  cursor: pointer;
+}
+
 input[type="text"] {
   color: #2c074d;
   font-size: 17px;
   font-family: 'Orbitron', sans-serif;
   position: absolute;
-  top: 65%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -205,6 +244,7 @@ input[type="text"] {
   color: #ffffff;
   animation: fadeIn 0.8s ease-out;
   padding: 20px 20px;
+  z-index: 20;
 }
 
 @keyframes fadeIn {

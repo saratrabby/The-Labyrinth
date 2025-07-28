@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="codes.css">
     <audio id="right" src="Audio/Right.mp3" preload="auto"></audio>
     <audio id="wrong" src="Audio/Wrong.mp3" preload="auto"></audio>
+    <div id="error-overlay"></div>
     <div class="notebook">
         <div class="cover">
             <h1 class="titolo-copertina">COSMIC</br>JOURNAL</h1>
@@ -19,6 +20,7 @@
                 <input type="text" id ="code" name="code" placeholder="Code"  required>
                 <button type="submit">Enter</button>
             </form>
+            <p class="richiesta2" onclick="reindirizza()">Trust me</p>
         </div>
         <div class="segnalibro"></div>
         <div id="popup1" class="popup">
@@ -203,6 +205,12 @@
         { return false; } 
         }
 
+        function reindirizza() {
+            window.location.href = "Pagine/eyes2.html";
+        }
+
+        const overlay = document.getElementById("error-overlay");
+
         var codice = "";
         document.getElementById("codeForm").addEventListener("click", function() {
             event.preventDefault();
@@ -296,9 +304,14 @@
             } else if (codice === "") {
             } else {
                 playWrong();
+                overlay.style.opacity = "1"; // mostra overlay
+
+                // dopo 1.5 secondi lo nasconde di nuovo
+                setTimeout(() => {
+                    overlay.style.opacity = "0";
+                }, 1500);
             }
         });
-
     </script>
   </body>
 </html>
