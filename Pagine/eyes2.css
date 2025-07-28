@@ -35,3 +35,63 @@ body {
     margin-bottom: 10%;
   }
 }
+
+@media screen and (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
+  body {
+    background-image: url("../Immagini/Eyes1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-attachment: scroll;
+  }
+
+  .freccia-sinistra {
+    font-size: 120px;
+    margin-left: 15%;
+    margin-bottom: 15%;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  body {
+    background-color: #000; /* sfondo nero */
+    background-image: url("../Immagini/Eyes1.png");
+    background-repeat: no-repeat;
+    background-size: contain; /* mostra tutta l'immagine */
+    background-position: center center;
+    background-attachment: scroll;
+    margin: 0;
+    padding: 0;
+  }
+
+  .freccia-sinistra {
+    font-size: 100px; /* più piccola per landscape */
+    margin-left: 0;
+    margin-bottom: 5%;
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  body {
+    background-color: #000; /* sfondo nero */
+    background-image: url("../Immagini/Eyes1.png");
+    background-repeat: no-repeat;
+    background-size: contain; /* mostra tutta l'immagine */
+    background-position: center center;
+    background-attachment: scroll;
+    margin: 0;
+    padding: 0;
+  }
+
+  .freccia-sinistra {
+    font-size: 90px; /* più piccola per schermi verticali */
+    margin-left: 0;
+    margin-bottom: 10%;
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+}
