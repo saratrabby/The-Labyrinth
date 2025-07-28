@@ -74,7 +74,7 @@ html, body {
 
 @media screen and (max-width: 768px) {
   html, body {
-    background-size: contain; /* mostra tutta l'immagine */
+    background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;

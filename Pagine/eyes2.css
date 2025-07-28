@@ -22,8 +22,16 @@ body {
 
 @media screen and (max-width: 768px) {
   body {
-    background-size: contain;
+    background-image: url("../Immagini/Eyes1.png");
     background-repeat: no-repeat;
-    background-position: top center;
+    background-size: contain; /* mostra tutta l'immagine */
+    background-position: center center;
+    background-attachment: scroll; /* evita problemi su mobile */
+  }
+
+  .freccia-sinistra {
+    font-size: 100px; /* più piccola */
+    margin-left: 10%;
+    margin-bottom: 10%;
   }
 }
