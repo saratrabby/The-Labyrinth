@@ -71,3 +71,18 @@ html, body {
   border-radius: 4px;
   z-index: 10;
 }
+
+@media screen and (max-width: 768px) {
+  html, body {
+    background-size: contain; /* mostra tutta l'immagine */
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .contenitore {
+    width: 95%;
+    margin: 20px auto;
+    transform: none; /* rimuove la rotazione per evitare tagli */
+  }
+}
