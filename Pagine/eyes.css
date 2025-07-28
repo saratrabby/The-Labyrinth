@@ -1,5 +1,11 @@
 body {
-  background-image: url("../Immagini/Eyes2.png"); /* Imposta l'immagine di sfondo */
+  background-color: #000; /* sfondo nero */
+  background-repeat: no-repeat;
+  background-size: contain; /* copre tutto lo schermo */
+  background-position: center center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
 }
 
 .freccia-sinistra {
@@ -10,7 +16,7 @@ body {
   text-align: center;
   transform: translateX(-50%);
   display: block;
-  margin-left: 80%;
+  margin-left: 20%;
   margin-bottom: 20%;
   position: absolute; 
 }
@@ -23,7 +29,6 @@ body {
 @media screen and (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
   body {
     background-color: #000; /* sfondo nero */
-    background-image: url("../Immagini/Eyes1.png");
     background-repeat: no-repeat;
     background-size: contain; /* mostra tutta l'immagine */
     background-position: center center;
@@ -39,7 +44,6 @@ body {
   }
 
   .immagine-centrale {
-    background-image: url("../Immagini/Eyes1.png");
     background-repeat: no-repeat;
     background-size: 100% auto; /* larghezza piena, altezza proporzionata */
     background-position: center center;
@@ -52,7 +56,6 @@ body {
 @media only screen and (max-width: 767px) and (orientation: landscape) {
   body {
     background-color: #000; /* sfondo nero */
-    background-image: url("../Immagini/Eyes1.png");
     background-repeat: no-repeat;
     background-size: contain; /* mostra tutta l'immagine */
     background-position: center center;
@@ -72,7 +75,6 @@ body {
   }
 
   .immagine-centrale {
-    background-image: url("../Immagini/Eyes1.png");
     background-repeat: no-repeat;
     background-size: 100% auto; /* larghezza piena, altezza proporzionata */
     background-position: center center;
@@ -85,7 +87,6 @@ body {
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   body {
     background-color: #000; /* sfondo nero */
-    background-image: url("../Immagini/Eyes1.png");
     background-repeat: no-repeat;
     background-size: contain; /* mostra tutta l'immagine */
     background-position: center center;
@@ -105,7 +106,6 @@ body {
   }
 
   .immagine-centrale {
-    background-image: url("../Immagini/Eyes1.png");
     background-repeat: no-repeat;
     background-size: 100% auto; /* larghezza piena, altezza proporzionata */
     background-position: center center;
