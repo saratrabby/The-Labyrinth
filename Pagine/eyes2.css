@@ -63,8 +63,8 @@ body {
 
   .freccia-sinistra {
     position: fixed;
-    top: 14px;
-    left: 20px;
+    top: 23px;
+    left: 45px;
     font-size: 80px;
     margin: 0;
     z-index: 1000;
@@ -96,8 +96,8 @@ body {
 
   .freccia-sinistra {
     position: fixed;
-    top: 14px;
-    left: 20px;
+    top: 23px;
+    left: 45px;
     font-size: 80px;
     margin: 0;
     z-index: 1000;
