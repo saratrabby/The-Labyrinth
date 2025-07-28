@@ -62,12 +62,13 @@ body {
   }
 
   .freccia-sinistra {
-    font-size: 100px; /* più piccola per landscape */
-    margin-left: 0;
-    margin-bottom: 5%;
-    position: relative;
-    display: block;
-    text-align: center;
+    position: fixed;
+    top: 14px;
+    left: 20px;
+    font-size: 80px;
+    margin: 0;
+    z-index: 1000;
+    text-align: left;
   }
 
   .immagine-centrale {
@@ -94,12 +95,13 @@ body {
   }
 
   .freccia-sinistra {
-    font-size: 90px; /* più piccola per schermi verticali */
-    margin-left: 0;
-    margin-bottom: 10%;
-    position: relative;
-    display: block;
-    text-align: center;
+    position: fixed;
+    top: 14px;
+    left: 20px;
+    font-size: 80px;
+    margin: 0;
+    z-index: 1000;
+    text-align: left;
   }
 
   .immagine-centrale {
