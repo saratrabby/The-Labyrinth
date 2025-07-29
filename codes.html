@@ -182,7 +182,7 @@
                         <p>Barbara Mer is a 35 y.o. reporter, actress, model, and mayor. She got
                         interviewed so many times by Cara that they ended up living together, if
                         you know what I mean.</p>
-                        <p>Their Starnet ship is called <a href="Pagine/carbara.html">CarBara</a> and their 
+                        <p>Their Starnet ship is called <a onclick="carBara()" style="cursor: pointer;">CarBara</a> and their 
                         fandom is called "Tiny Reporters".</p>
                     </div>
                 </div>
@@ -204,6 +204,10 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="popup2" id="popupCarBara">
+        <button class="close-btn2" onclick="document.getElementById('popupCarBara').style.display = 'none';">×</button>
+        <img src="Immagini/CarBara.png" alt="CarBara">
     </div>
     
     <script>
@@ -336,6 +340,11 @@
                 }, 1500);
             }
         });
+
+        function carBara() {
+            document.getElementById("popupCarBara").style.display = "flex";
+        }
+
     </script>
   </body>
 </html>
