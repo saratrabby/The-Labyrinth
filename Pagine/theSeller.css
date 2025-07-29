@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.side-image {
+  height: 90vh; /* quasi tutta la lunghezza della pagina */
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.arrow {
+  color: rgb(255, 251, 0);
+  font-size: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.arrow:hover {
+  color: #ffee0076;
+  cursor: pointer;
+}
+
+.paragraph {
+  color: rgb(74, 74, 74);
+  font-size: 25px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
