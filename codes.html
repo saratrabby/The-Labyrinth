@@ -205,6 +205,22 @@
             </div>
         </div>
     </div>
+    <div id="popup11" class="popup">
+        <div class="popup-content">
+            <span id="closePopup11" class="close">&times;</span>
+            <h2 class="popup-title">11. The Fanclub</h2>
+            <div class="popup-body">
+                <img src="Immagini/Stellina.png" alt="Foret" class="popup-image">
+                <div class="popup-text">
+                    <p>Apperently, Seller is one of the most known aliens in Antenna, even
+                    if they've been there for only 10 years.</p>
+                    <p>Aliens all over Antenna made a fanclub for honouring Seller and,
+                    thanks to <a href="https://cosmic-mission-n.fandom.com/wiki/Easter_Olivia#Gallery">the founder</a>, it grew a lot in the past few years!</p>
+                    <p>They also organize <a onclick="parade()" style="cursor: pointer;">parades</a> all Seller themed.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <div class="popup2" id="popupMissing">
         <button class="close-btn2" onclick="document.getElementById('popupMissing').style.display = 'none';">×</button>
@@ -237,6 +253,10 @@
     <div class="popup2" id="popupCarBara">
         <button class="close-btn2" onclick="document.getElementById('popupCarBara').style.display = 'none';">×</button>
         <img src="Immagini/CarBara.png" alt="CarBara">
+    </div>
+    <div class="popup2" id="popupParade">
+        <button class="close-btn2" onclick="document.getElementById('popupParade').style.display = 'none';">×</button>
+        <img src="Immagini/Parade.png" alt="Parade">
     </div>
     
     <script>
@@ -274,6 +294,27 @@
             var popup8 = document.getElementById("popup8");
             var popup9 = document.getElementById("popup9");
             var popup10 = document.getElementById("popup10");
+            var popup10 = document.getElementById("popup11");
+            var popup10 = document.getElementById("popup12");
+            var popup10 = document.getElementById("popup13");
+            var popup10 = document.getElementById("popup14");
+            var popup10 = document.getElementById("popup15");
+            var popup10 = document.getElementById("popup16");
+            var popup10 = document.getElementById("popup17");
+            var popup10 = document.getElementById("popup18");
+            var popup10 = document.getElementById("popup19");
+            var popup10 = document.getElementById("popup20");
+            var popup10 = document.getElementById("popup21");
+            var popup10 = document.getElementById("popup22");
+            var popup10 = document.getElementById("popup23");
+            var popup10 = document.getElementById("popup24");
+            var popup10 = document.getElementById("popup25");
+            var popup10 = document.getElementById("popup26");
+            var popup10 = document.getElementById("popup27");
+            var popup10 = document.getElementById("popup28");
+            var popup10 = document.getElementById("popup29");
+            var popup10 = document.getElementById("popup30");
+
             codice = document.getElementById("code").value;
             codice = codice.trim(); // Remove any leading/trailing whitespace
             codice = codice.toUpperCase(); // Convert to uppercase
@@ -358,6 +399,13 @@
                     document.getElementById("popup10").style.display = 'none';
                     document.getElementById('codeForm').reset();
                 });
+            } else if (codice === "SELLER") {
+                playRight();
+                popup11.style.display = 'flex'; // Show popup
+                document.getElementById("closePopup11").addEventListener("click", function() {
+                    document.getElementById("popup11").style.display = 'none';
+                    document.getElementById('codeForm').reset();
+                });
             } else if (codice === "") {
             } else {
                 playWrong();
@@ -400,6 +448,10 @@
 
         function carBara() {
             document.getElementById("popupCarBara").style.display = "flex";
+        }
+
+        function parade() {
+            document.getElementById("popupParade").style.display = "flex";
         }
 
     </script>

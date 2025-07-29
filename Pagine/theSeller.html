@@ -8,10 +8,10 @@
   <body data-server-no-reload>
     <link rel="stylesheet" href="theSeller.css">
     <div class="container">
-        <img src="../Immagini/TheSeller.png" alt="theSeller" class="side-image" />
+        <img src="../Immagini/TheSeller.png" alt="theSeller" class="side-image"/>
         
         <div class="content">
-            <div class="arrow">&#8592;</div>
+            <div class="arrow" onclick="reindirizza()">&#8592;</div>
             <p class="paragraph">I love them I love them I love them I love them I love them
             I love them I love them I love them I love them I love them I love them
             I love them I love them I love them I love them I love them I love them 
@@ -40,6 +40,10 @@
         if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'J'.charCodeAt(0)) { return false; }
         if(blocco_tasti.ctrlKey && blocco_tasti.keyCode == 'U'.charCodeAt(0)) 
         { return false; } 
+        }
+
+        function reindirizza() {
+            window.location.href = "../codes.html";
         }
 
     </script>
