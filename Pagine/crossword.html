@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>COSMIC MISSION CROSSWORD</title>
+  </head>
+  <body data-server-no-reload>
+    <link rel="stylesheet" href="docs.css">
+    <div class="sezione-nastro">
+        <div class = "contenitore" style="background-color: rgba(111, 52, 117, 0.597);">
+            <p class="sottotitolo" >Click the <b class="arrow" onclick="reindirizza()">ARROW</b> to go back</p>
+            <a href="../codes.html" class="freccia-sinistra">←</a>
+            <div class="sezione-nastro">
+                <p class="contenitore">
+                  <b>COSMIC MISSION CROSSWORD</b></br>
+                  <b><a href="https://forms.gle/5noPLU9aQ8ddFUki8" style="cursor: pointer;">Answer here</a></b>
+                  </br></br>
+                  <img src="../Immagini/CosmicMissionCrossword.png" alt="CosmicMissionCrossword">
+                  <p>
+                    <b>Across</b></br>
+                    4.	Last name of an antennian reporter</br>
+                    6.	Red head spiky triton twin</br>
+                    8.	Adjective is used to describe Amanda’s clients</br>
+                    10.	Cosmic Mission character that probably has anger issues</br>
+                    11.	Celebrated in Antenna in October</br>
+                    12.	Body part floating around CM official art</br>
+                  </p>
+                  <p>
+                    <b>Down</b></br>
+                    1.	Axel being a deity?</br>
+                    2.	Wealthy alien</br>
+                    3.	Astronaut Agency</br>
+                    5.	Snakoid planet</br>
+                    7.	Loves making drinks</br>
+                    9.	Tentacles hair triton</br>
+                    11.	Character that used to sell t-shirts in their original design</br>
+                  </p>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+
+        function blocco_mousedx()
+        { return(false); }
+        document.oncontextmenu = blocco_mousedx;
+
+        document.onkeydown = function(blocco_tasti) {
+        if(event.keyCode == 123) 
+        { return false; }
+        if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'I'.charCodeAt(0)) { return false; }
+        if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'C'.charCodeAt(0)) { return false; }
+        if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'J'.charCodeAt(0)) { return false; }
+        if(blocco_tasti.ctrlKey && blocco_tasti.keyCode == 'U'.charCodeAt(0)) 
+        { return false; } 
+        }
+
+        function reindirizza() {
+            window.location.href = "eyes1.html";
+        }
+
+    </script>
+  </body>
+</html>

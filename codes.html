@@ -382,6 +382,69 @@
         <button class="close-btn2" id="closePopup26">×</button>
         <img src="Immagini/Rebus2.png" alt="Rebus2">
     </div>
+    <div id="popup27" class="popup">
+        <div class="popup-content">
+            <span id="closePopup27" class="close">&times;</span>
+            <h2 class="popup-title">27. Seller's Dream</h2>
+            <div class="popup-body">
+                <img src="Immagini/Gambling.webp" alt="Gambling" class="popup-image">
+                <div class="popup-text">
+                    <p>Seller's biggest dream was to host a game show (they loved the "Wheel of Astros").</p>
+                    <p>You may ask why is that... Well, actually, we don't really kknow that either because
+                    Seller <a href="Pagine/crossword.html">refused to talk</a> more about their dream in the interview.</p>
+                    <p>Oh yeah, they also told us that the ideal name of their game show would've been The D.</p></br>
+                    <p><a href="https://wheelofnames.com/qmw-wvg">PLAY NOW !!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup28" class="popup">
+        <div class="popup-content">
+            <span id="closePopup28" class="close">&times;</span>
+            <h2 class="popup-title">28. Crossword</h2>
+            <div class="popup-body">
+                <div class="popup-text">
+                    <p>No fun facts here, but you can complete this Cosmic Mission Crossword!</p></br>
+                    <p><a href="Pagine/crossword.html">COMPLETE NOW !!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup29" class="popup">
+        <div class="popup-content">
+            <span id="closePopup29" class="close">&times;</span>
+            <h2 class="popup-title">29. Music</h2>
+            <div class="popup-body">
+                <div class="popup-text">
+                    <p>Have you ever wondered about what music do the Cosmic Mission characters listen to? 
+                    Now you can listen and add music you think they'll like to their playlist!</p>
+                    </p></br>
+                    <p>
+                        <ul>
+                            <li><a href="https://open.spotify.com/playlist/56PoUt5ASBtNFrvOw7CUlA?si=qTshqlN2QdeudRQpnpsvPQ&pt=d7219501a6736559d11ae6ef468890e6&pi=GycVj0MXSlOS7">STEPHANY</a></li>
+                            <li><a href="https://open.spotify.com/playlist/3EmxdMQ8HbeykLMiL9TwX1?si=CtWTMkG6RXmgw6njxHxN5w&pt=28abaeb9329f880e4fb1a33a6b6bd40e&pi=SaHSd3KcSQa3M">AMANDA</a></li>
+                            <li><a href="https://open.spotify.com/playlist/4Ed9Bm249xWDr9I5DD5Aeh?si=846qVmUPSeiRz38zyID-aw&pt=624e381c802fa9801d2ad8d25fbd5859&pi=6qonP5rRRNuIz">SELLER</a></li>
+                            <li><a href="https://open.spotify.com/playlist/5tjVlsRE4RVnvcm8fI9uw1?si=qMxMDrpkTtmXz65R7AmXrw&pt=a75be73c692b09cc2e9423a1247f811c&pi=n4CiHdwBSFCT9">AXEL</a></li>
+                            <li><a href="">CM Vibes</a></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup30" class="popup">
+        <div class="popup-content">
+            <span id="closePopup28" class="close">&times;</span>
+            <h2 class="popup-title">30. Webtoon Episodes</h2>
+            <div class="popup-body">
+                <div class="popup-text">
+                    <p>Cosmic Mission was a webtoon?! That's right!!! And you can read the episodes down below!!!</p></br>
+                    <p><a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4NTI0MzMwMDk4MDA3ODI2?igsh=MXJjczBycG11NGlqYQ==">READ NOW !!</a></p></br>
+                    <p>Website created by: <a href="https://www.instagram.com/gravityfallsguide?igsh=OXU1ZWlwNHJmem5o&utm_source=qr">@gravityfallsguide</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <div class="popup2" id="popupMissing">
         <button class="close-btn2" onclick="document.getElementById('popupMissing').style.display = 'none';">×</button>
@@ -725,6 +788,34 @@
                 popup26.style.display = 'flex'; // Show popup
                 document.getElementById("closePopup26").addEventListener("click", function() {
                     document.getElementById("popup26").style.display = 'none';
+                    document.getElementById('codeForm').reset();
+                });
+            } else if (codice === "ASTROS" || codice === "MONEY") {
+                playRight();
+                popup27.style.display = 'flex'; // Show popup
+                document.getElementById("closePopup27").addEventListener("click", function() {
+                    document.getElementById("popup27").style.display = 'none';
+                    document.getElementById('codeForm').reset();
+                });
+            } else if (codice === "CROSSWORD") {
+                playRight();
+                popup28.style.display = 'flex'; // Show popup
+                document.getElementById("closePopup28").addEventListener("click", function() {
+                    document.getElementById("popup28").style.display = 'none';
+                    document.getElementById('codeForm').reset();
+                });
+            } else if (codice === "MUSIC") {
+                playRight();
+                popup29.style.display = 'flex'; // Show popup
+                document.getElementById("closePopup29").addEventListener("click", function() {
+                    document.getElementById("popup29").style.display = 'none';
+                    document.getElementById('codeForm').reset();
+                });
+            } else if (codice === "EPISODE" || codice === "EPISODES") {
+                playRight();
+                popup30.style.display = 'flex'; // Show popup
+                document.getElementById("closePopup30").addEventListener("click", function() {
+                    document.getElementById("popup30").style.display = 'none';
                     document.getElementById('codeForm').reset();
                 });
             } else if (codice === "") {

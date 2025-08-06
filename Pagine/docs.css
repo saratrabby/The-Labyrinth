@@ -72,6 +72,14 @@ html, body {
   z-index: 10;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+}
+
 @media screen and (max-width: 768px) {
   html, body {
     background-size: cover;
@@ -84,5 +92,6 @@ html, body {
     width: 95%;
     margin: 20px auto;
     transform: none; /* rimuove la rotazione per evitare tagli */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
   }
 }
