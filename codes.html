@@ -53,7 +53,7 @@
                 <div class="popup-text">
                     <p>Tritonia (and New Tritonia) live thanks to <a onclick="monarchy()" style="cursor: pointer;">Monarchy</a>.</p>
                     <p>When a member of the Royal Family ends up being 20, thet have to reign.</p>
-                    <p>The Royal Families in <a href="">Tritonia and New Tritonia</a>
+                    <p>The Royal Families in <a onclick="newTritonia()" style="cursor: pointer;">Tritonia and New Tritonia</a>
                     are very different, they often fight and they aren't related.</p>
                     <p>Even if most of the tritons moved to New Tritonia, there's
                     still someone on the old Tritonia planet.</p>
@@ -112,7 +112,7 @@
                     Johnny plays the client.</p>
                     <p>And what do Karen and Peter do while their kids are playing? Easy, they
                     gossip about Axel and Seller behind their backs! Luckuly the kids
-                    listen and <a href="">say everything</a> to both victims.</p>
+                    listen and <a onclick="idk()" style="cursor: pointer;">say everything</a> to both victims.</p>
                 </div>
             </div>
         </div>
@@ -126,7 +126,7 @@
                 <div class="popup-text">
                     <p>Snakoids one day randomly created a new genre of plays called "Horropera".</p>
                     <p>Basically they fused the scary stories of horror movies and the
-                    classic opera and the plays somehow <a href="">got more funny</a>.</p>
+                    classic opera and the plays somehow <a onclick="kill()" style="cursor: pointer;">got more funny</a>.</p>
                     <p>Almost one Billion of plays like that were made and a lot of snakoid
                     came from all over the planet to watch them.</p>
                     <p>There's also a sub-genre which is just an <a href="https://kahoot.com/">interactive</a>
@@ -504,6 +504,18 @@
     <div class="popup2" id="popupSellerFriends">
         <button class="close-btn2" onclick="document.getElementById('popupSellerFriends').style.display = 'none';">×</button>
         <img src="Immagini/SellerFriends.png" alt="SellerFriends">
+    </div>
+    <div class="popup2" id="popupNewTritonia">
+        <button class="close-btn2" onclick="document.getElementById('popupNewTritonia').style.display = 'none';">×</button>
+        <img src="Immagini/NewTritonia.png" alt="NewTritonia">
+    </div>
+    <div class="popup2" id="popupIdk">
+        <button class="close-btn2" onclick="document.getElementById('popupIdk').style.display = 'none';">×</button>
+        <img src="Immagini/Idk.png" alt="Idk">
+    </div>
+    <div class="popup2" id="popupKill">
+        <button class="close-btn2" onclick="document.getElementById('popupKill').style.display = 'none';">×</button>
+        <img src="Immagini/Kill.png" alt="Fun">
     </div>
     
     <script>
@@ -894,6 +906,18 @@
 
         function sellerFriends() {
             document.getElementById("popupSellerFriends").style.display = "flex";
+        }
+
+        function newTritonia() {
+            document.getElementById("popupNewTritonia").style.display = "flex";
+        }
+
+        function idk() {
+            document.getElementById("popupIdk").style.display = "flex";
+        }
+
+        function kill() {
+            document.getElementById("popupKill").style.display = "flex";
         }
 
     </script>
