@@ -297,6 +297,10 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+  .notebook:hover .cover {
+      transform: rotateY(-160deg);
+  }
+
   .popup-content {
     width: 90%;           /* Si adatta allo schermo */
     padding: 20px;        /* Riduci padding */
@@ -392,6 +396,10 @@ a {
     .notebook {
         width: 80vw;
         height: 70vh;
+    }
+
+    .notebook:hover .cover {
+      transform: rotateY(-160deg);
     }
 
     .cover {
