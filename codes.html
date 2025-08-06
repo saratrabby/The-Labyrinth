@@ -343,6 +343,45 @@
             </div>
         </div>
     </div>
+    <div class="popup2" id="popup21">
+        <button class="close-btn2" id="closePopup21">×</button>
+        <img src="Immagini/Ax.png" alt="Message1" id="Ax">
+        <div class="arrowy prev">&#9664;</div> <!-- Freccia sinistra -->
+        <div class="arrowy next">&#9654;</div> <!-- Freccia destra -->
+    </div>
+    <div class="popup2" id="popup22">
+        <button class="close-btn2" id="closePopup22">×</button>
+        <img src="Immagini/Diary1.png" alt="Diary1">
+    </div>
+    <div class="popup2" id="popup23">
+        <button class="close-btn2" id="closePopup23">×</button>
+        <img src="Immagini/Diary2.png" alt="Diary2">
+    </div>
+    <div class="popup2" id="popup24">
+        <button class="close-btn2" id="closePopup24">×</button>
+        <img src="Immagini/Sea.png" alt="Sea">
+    </div>
+    <div id="popup25" class="popup">
+        <div class="popup-content">
+            <span id="closePopup25" class="close">&times;</span>
+            <h2 class="popup-title">25. Reality Shows</h2>
+            <div class="popup-body">
+                <img src="Immagini/Reality_show.png" alt="Reality_show" class="popup-image">
+                <div class="popup-text">
+                    <p>Katri and Nitri LOVE <a href="https://en.wikipedia.org/wiki/Total_Drama_Island">reality shows</a>! 
+                    They've been secretly watching them since they were 5.</p>
+                    <p>Their parents HATE reality shows, so these two evil beings watch them from another house
+                    (their neighbor didn't notice that yet, so don't tell him).</p>
+                    <p>Sometimes, these two twins like fighting over who will win the 10k Astros
+                    (Galaxy currency) and <a href="https://cosmic-mission-n.fandom.com/wiki/Easter_Olivia">fangirl</a> on their favorite aliens.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup2" id="popup26">
+        <button class="close-btn2" id="closePopup26">×</button>
+        <img src="Immagini/Rebus2.png" alt="Rebus2">
+    </div>
     
     <div class="popup2" id="popupMissing">
         <button class="close-btn2" onclick="document.getElementById('popupMissing').style.display = 'none';">×</button>
@@ -612,6 +651,80 @@
                 popup20.style.display = 'flex'; // Show popup
                 document.getElementById("closePopup20").addEventListener("click", function() {
                     document.getElementById("popup20").style.display = 'none';
+                    document.getElementById('codeForm').reset();
+                });
+            } else if (codice === "AMY" || codice === "AX" || codice === "MESSAGES" || codice === "MESSAGE") {
+                playRight();
+                popup21.style.display = 'flex'; // Show popup
+
+                const images = ["Immagini/Ax.png", "Immagini/Amy.png"];
+                let index = 0;
+
+                // Elemento immagine principale
+                const imgElement = document.getElementById("Ax");
+
+                // Frecce
+                const nextArrow = document.querySelector(".arrowy.next");
+                const prevArrow = document.querySelector(".arrowy.prev");
+
+                // Funzione per aggiornare immagine
+                function updateImage() {
+                    imgElement.src = images[index];
+                }
+
+                // Evento freccia destra (avanti)
+                nextArrow.addEventListener("click", () => {
+                    index = (index + 1) % images.length;
+                    updateImage();
+                });
+
+                // Evento freccia sinistra (indietro)
+                prevArrow.addEventListener("click", () => {
+                    index = (index - 1 + images.length) % images.length;
+                    updateImage();
+                });
+
+                // Mostra immagine iniziale
+                updateImage();
+
+                document.getElementById("closePopup21").addEventListener("click", function() {
+                    document.getElementById("popup21").style.display = 'none';
+                    document.getElementById('codeForm').reset();
+                });
+
+            } else if (codice === "ALEX") {
+                playRight();
+                popup22.style.display = 'flex'; // Show popup
+                document.getElementById("closePopup22").addEventListener("click", function() {
+                    document.getElementById("popup22").style.display = 'none';
+                    document.getElementById('codeForm').reset();
+                });
+            } else if (codice === "AMANDALIEN" || codice === "AMANDA LIEN") {
+                playRight();
+                popup23.style.display = 'flex'; // Show popup
+                document.getElementById("closePopup23").addEventListener("click", function() {
+                    document.getElementById("popup23").style.display = 'none';
+                    document.getElementById('codeForm').reset();
+                });
+            } else if (codice === "SEA") {
+                playRight();
+                popup24.style.display = 'flex'; // Show popup
+                document.getElementById("closePopup24").addEventListener("click", function() {
+                    document.getElementById("popup24").style.display = 'none';
+                    document.getElementById('codeForm').reset();
+                });
+            } else if (codice === "FANGIRL") {
+                playRight();
+                popup25.style.display = 'flex'; // Show popup
+                document.getElementById("closePopup25").addEventListener("click", function() {
+                    document.getElementById("popup25").style.display = 'none';
+                    document.getElementById('codeForm').reset();
+                });
+            } else if (codice === "BEER") {
+                playRight();
+                popup26.style.display = 'flex'; // Show popup
+                document.getElementById("closePopup26").addEventListener("click", function() {
+                    document.getElementById("popup26").style.display = 'none';
                     document.getElementById('codeForm').reset();
                 });
             } else if (codice === "") {

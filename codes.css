@@ -367,6 +367,27 @@ a {
   cursor: pointer;
 }
 
+.arrowy {
+  position: fixed; /* FISSA le frecce rispetto allo schermo */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000; /* Per sovrapporle a tutto */
+}
+
+.arrowy.prev {
+  left: 20px; /* margine sinistro dello schermo */
+}
+
+.arrowy.next {
+  right: 20px; /* margine destro dello schermo */
+}
+
 @media screen and (max-width: 768px) and (orientation: landscape) {
     .notebook {
         width: 80vw;
